@@ -1,6 +1,6 @@
 ﻿namespace VegaJuego
 {
-    partial class Form1
+    partial class Level1
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,10 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Level1));
+            SuspendLayout();
+            // 
+            // Level1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.FondoFinal;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(806, 467);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            Name = "Level1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "VegaZelda";
+            ResumeLayout(false);
         }
 
         #endregion
