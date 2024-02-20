@@ -33,16 +33,17 @@
             // 
             // Level1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.FondoFinal;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(806, 467);
+            DoubleBuffered = true;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "Level1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "VegaZelda";
+            KeyPress += Level1_KeyPress;
             ResumeLayout(false);
         }
 
