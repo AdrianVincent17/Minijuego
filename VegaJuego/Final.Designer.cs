@@ -35,12 +35,13 @@
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.GameOver;
-            ClientSize = new Size(786, 403);
+            ClientSize = new Size(800, 451);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MinimizeBox = false;
             Name = "Final";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Final";
+            FormClosed += Final_FormClosed;
             ResumeLayout(false);
         }
 

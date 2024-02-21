@@ -134,6 +134,7 @@
             Name = "Level1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "VegaZelda";
+            FormClosed += Level1FormClosed;
             KeyPress += Level1_KeyPress;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
