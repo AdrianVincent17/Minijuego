@@ -53,18 +53,19 @@
             labelVida.BackColor = Color.Transparent;
             labelVida.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelVida.ForeColor = Color.Gold;
-            labelVida.Location = new Point(620, 125);
+            labelVida.Location = new Point(747, 136);
             labelVida.Name = "labelVida";
-            labelVida.Size = new Size(108, 54);
+            labelVida.Size = new Size(39, 19);
             labelVida.TabIndex = 0;
             labelVida.Text = "Vida";
+            labelVida.Click += labelVida_Click;
             // 
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.BackgroundImage = Properties.Resources.salud;
             pictureBox1.BackgroundImageLayout = ImageLayout.Center;
-            pictureBox1.Location = new Point(586, 125);
+            pictureBox1.Location = new Point(698, 125);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(43, 39);
             pictureBox1.TabIndex = 1;
@@ -75,7 +76,7 @@
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.BackgroundImage = Properties.Resources.escudo;
             pictureBox2.BackgroundImageLayout = ImageLayout.Center;
-            pictureBox2.Location = new Point(586, 175);
+            pictureBox2.Location = new Point(698, 170);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(43, 39);
             pictureBox2.TabIndex = 1;
@@ -86,11 +87,12 @@
             pictureBox3.BackColor = Color.Transparent;
             pictureBox3.BackgroundImage = Properties.Resources.Arma;
             pictureBox3.BackgroundImageLayout = ImageLayout.Center;
-            pictureBox3.Location = new Point(586, 225);
+            pictureBox3.Location = new Point(698, 215);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(43, 39);
             pictureBox3.TabIndex = 1;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // labelEscudo
             // 
@@ -98,9 +100,9 @@
             labelEscudo.BackColor = Color.Transparent;
             labelEscudo.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelEscudo.ForeColor = Color.Gold;
-            labelEscudo.Location = new Point(620, 175);
+            labelEscudo.Location = new Point(747, 180);
             labelEscudo.Name = "labelEscudo";
-            labelEscudo.Size = new Size(154, 54);
+            labelEscudo.Size = new Size(55, 19);
             labelEscudo.TabIndex = 0;
             labelEscudo.Text = "Escudo";
             // 
@@ -110,9 +112,9 @@
             labelArma.BackColor = Color.Transparent;
             labelArma.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelArma.ForeColor = Color.Gold;
-            labelArma.Location = new Point(620, 225);
+            labelArma.Location = new Point(747, 226);
             labelArma.Name = "labelArma";
-            labelArma.Size = new Size(126, 54);
+            labelArma.Size = new Size(46, 19);
             labelArma.TabIndex = 0;
             labelArma.Text = "Arma";
             // 
@@ -134,6 +136,7 @@
             Name = "Level1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "VegaZelda";
+            FormClosed += Level1FormClosed;
             KeyPress += Level1_KeyPress;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
