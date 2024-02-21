@@ -121,7 +121,7 @@
             AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.FondoFinal;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(786, 403);
+            ClientSize = new Size(886, 403);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
