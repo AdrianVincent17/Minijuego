@@ -36,7 +36,7 @@
             AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.FondoFinal;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(806, 467);
+            ClientSize = new Size(786, 403);
             DoubleBuffered = true;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;

@@ -22,19 +22,19 @@ namespace VegaJuego
 
         public int Arma
         {
-            get { return Arma; }
+            get { return arma; }
             set { arma = value; }
         }
 
         public int Escudo
         {
-            get { return Escudo; }
+            get { return escudo; }
             set { escudo = value; }
         }
 
         public int Salud
         {
-            get { return Salud; }
+            get { return salud; }
             set { salud = value; }
         }
 
@@ -53,7 +53,7 @@ namespace VegaJuego
                 this.Caja.BackgroundImage = global::VegaJuego.Properties.Resources.Abajo;
                 this.Caja.Location = new Point(this.Caja.Location.X, this.Caja.Location.Y + 10);
             }
-            if (e.KeyChar == 'd' && (Caja.Location.X < Lienzo.Size.Height - 120))
+            if (e.KeyChar == 'd' && (Caja.Location.X < Lienzo.Size.Width - 120))
             {
                 this.Direccion = "DERECHA";
                 this.Caja.BackgroundImage = global::VegaJuego.Properties.Resources.derecha;

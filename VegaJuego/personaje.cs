@@ -9,19 +9,19 @@ namespace VegaJuego
 {
     internal class Personaje
     {
-        private int coordx;
-        private int coordy;
+        private int coordX;
+        private int coordY;
         private Level1 lienzo;
         private PictureBox caja= new PictureBox();
         private String direccion;
 
         public Personaje(Level1 vegaZelda, int x, int y)
         {
-            coordx = x;
-            coordy = y;
+            coordX = x;
+            coordY = y;
             lienzo = vegaZelda;
             direccion = "Derecha";
-            caja.Location=new System.Drawing.Point(Coordx, Coordy);
+            caja.Location = new System.Drawing.Point(CoordX, CoordY);
             caja.BackColor = System.Drawing.Color.Transparent;
             caja.Size = new System.Drawing.Size(110, 110);
             caja.BackgroundImageLayout=System.Windows.Forms.ImageLayout.None;
@@ -34,15 +34,15 @@ namespace VegaJuego
             get { return direccion; }
             set { direccion = value; }
         }
-        public int Coordy
+        public int CoordY
         {
-            get { return coordy; }
-            set { coordy = value; }
+            get { return coordY; }
+            set { coordY = value; }
         }
-        public int Coordx
+        public int CoordX
         {
-            get { return coordx; }
-            set { coordx = value; }
+            get { return coordX; }
+            set { coordX = value; }
         }
 
         public Level1 Lienzo
@@ -58,9 +58,9 @@ namespace VegaJuego
         }
         //Metodo que se definira en cada clase hija
             public void mover()
-        {
+            {
 
-        }
+            }
         }
     }
 
