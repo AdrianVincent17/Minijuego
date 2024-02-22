@@ -43,7 +43,7 @@
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.BackgroundImageLayout = ImageLayout.Center;
             pictureBox1.Image = Properties.Resources.ZeldaLogo;
-            pictureBox1.Location = new Point(477, 122);
+            pictureBox1.Location = new Point(489, 110);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(202, 90);
             pictureBox1.TabIndex = 0;
@@ -53,9 +53,9 @@
             // 
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(92, 47);
+            label1.Location = new Point(489, 75);
             label1.Name = "label1";
-            label1.Size = new Size(697, 72);
+            label1.Size = new Size(225, 22);
             label1.TabIndex = 1;
             label1.Text = "Creado por Adrian Vicente Lopez";
             // 
@@ -63,9 +63,9 @@
             // 
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.BackgroundImage = Properties.Resources.LogoBueno;
-            pictureBox2.Location = new Point(-1, 110);
+            pictureBox2.Location = new Point(0, 3);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(210, 206);
+            pictureBox2.Size = new Size(203, 206);
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
             // 
@@ -74,9 +74,9 @@
             checkSonido.AutoSize = true;
             checkSonido.BackColor = Color.Transparent;
             checkSonido.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            checkSonido.Location = new Point(444, 231);
+            checkSonido.Location = new Point(489, 227);
             checkSonido.Name = "checkSonido";
-            checkSonido.Size = new Size(326, 52);
+            checkSonido.Size = new Size(112, 19);
             checkSonido.TabIndex = 3;
             checkSonido.Text = "Sonido On/Off";
             checkSonido.UseVisualStyleBackColor = false;
@@ -87,13 +87,14 @@
             button1.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.Gold;
             button1.Image = Properties.Resources.Boton;
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(250, 435);
+            button1.ImageAlign = ContentAlignment.TopCenter;
+            button1.Location = new Point(489, 440);
             button1.Name = "button1";
-            button1.Size = new Size(489, 69);
+            button1.Size = new Size(202, 70);
             button1.TabIndex = 4;
-            button1.Text = "Comienza la aventura";
-            button1.TextAlign = ContentAlignment.MiddleRight;
+            button1.Text = "Comienza tu aventura";
+            button1.TextAlign = ContentAlignment.BottomCenter;
+            button1.TextImageRelation = TextImageRelation.ImageAboveText;
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
@@ -101,7 +102,7 @@
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.FondoPantalla;
-            ClientSize = new Size(815, 576);
+            ClientSize = new Size(816, 580);
             Controls.Add(button1);
             Controls.Add(checkSonido);
             Controls.Add(pictureBox2);
@@ -111,7 +112,7 @@
             MinimizeBox = false;
             Name = "PantallaInicio";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "PantallaInicio";
+            Text = "a";
             FormClosed += PantallaInicio_FormClosed;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

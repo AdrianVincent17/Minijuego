@@ -10,7 +10,7 @@ namespace VegaJuego
         Link Player;
         Broncas Enemigo1;
         SoundPlayer musica;
-        Boolean HaySonido=false;    
+        Boolean HaySonido = false;
 
         public Level1(CheckBox onOff)
         {
@@ -24,7 +24,7 @@ namespace VegaJuego
             if (onOff.Checked == true)
             {
                 musica = new SoundPlayer(global::VegaJuego.Properties.Resources.sonido);
-                musica.PlayLooping();   
+                musica.PlayLooping();
                 HaySonido = true;
             }
             labelVida.Text = "Salud->" + Player.Salud;
@@ -67,11 +67,21 @@ namespace VegaJuego
                 //Paramos el temporizador
                 MovEnemigos.Stop();
                 End.Show();
-            }  
+            }
         }
         private void Level1FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelVida_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
